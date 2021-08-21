@@ -56,7 +56,6 @@ function saludo(idioma) {
  }
 }
 
-
 function colors(color) {
   //La función recibe un color. Devolver el string correspondiente:
   //En caso que el color recibido sea "blue", devuleve --> "This is blue"
@@ -83,7 +82,7 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero===10 or numero ===5){
+  if (numero===10 || numero ===5){
     return true;
   } 
   return false;
