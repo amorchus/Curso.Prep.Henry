@@ -118,7 +118,7 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
   if (numero % 3 ===0 && numero %5 ===0){
-    return "fizzbuzz";
+    //return "fizzbuzz";
   } else if (numero %5===0){
     return 'buzz';
   } else if (numero %3===0){
@@ -145,7 +145,7 @@ function operadoresLogicos(num1, num2, num3) {
     return num3;
   } else if (num1===0 || num2 ===0 || num3===0){
     return "Error";
-  } else if {
+  } else {
     return false;
   }
 }
@@ -188,6 +188,7 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
+ console.log('no lo se');
   
 }
 
