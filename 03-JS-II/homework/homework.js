@@ -17,9 +17,9 @@ function mayoriaDeEdad(edad) {
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
   if (edad >= 18) {
-    console.log('Allewed');
+    return "Allowed";
   } else {
-    console.log('Not allowed');
+    return "Not allowed";
   }
 }
   
@@ -30,11 +30,11 @@ function conection(status) {
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
   switch(status){
-    case 1: console.log('Online');
+    case 1: return "Online"
     break;
-    case 2: console.log('Away');
+    case 2: return "Away";
     break;
-    default: console.log('Offline');
+    default: return 'Offline';
   }
 }
 
@@ -46,13 +46,13 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
  if (idioma ==='aleman'){
-    console.log('Guten Tag!');
+    return "Guten Tag!";
  } else if ( idioma ==='mandarin'){
-    console.log('Bi Hao!');
+    return 'Ni Hao!';
  } else if (idioma === 'ingles'){
-  console.log('Hello!');
+  return "Hello!"; //probando comillas dobles;
  } else {
-  console.log('Hola!');
+  return 'Hola!'; //probando comillas simple; 
  }
 }
 
@@ -65,15 +65,15 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
   switch(color){
-    case 'blue': console.log('This is blue');
+    case 'blue': return 'This is blue';
     break;
-    case 'red': console.log('This is red');
+    case 'red': return 'This is red';
     break;
-    case 'green': console.log('This is green');
+    case 'green': return 'This is green';
     break;
-    case 'orange': console.log('This is orange');
+    case 'orange': return 'This is orange';
     break;
-    default: console.log('Color not found');
+    default: return 'Color not found';
   }
 }
 
@@ -118,12 +118,14 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
   if (numero % 3 ===0 && numero %5 ===0){
-    console.log('fizzbuzz');
-  } else if ( numero %5 ){
-    console.lof('buzz');
-  } else if ( numero %3 ){
-    console.lof('fizz');
-  } else {console.log(numero);}
+    return "fizzbuzz";
+  } else if (numero %5===0){
+    return 'buzz';
+  } else if (numero %3===0){
+    return 'fizz';
+  } else {
+    return numero;
+  }
 }
 
 
@@ -134,17 +136,17 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-  if (num1>num2 && num1>num3 && num1>0){
-    console.log('El Numero 1 es mayor y Positivo');
-  }  
-  if (num1<0 || num2<0 || num3<0){
-    console.log('Hay negativos');
+  if (num1>num2 && num1>num3 && num1>0 && num2>0 && num3>0){
+    return "Número 1 es mayor y positivo";
+  } else if (num1<0 || num2<0 || num3<0){
+    return "Hay negativos";
   }else if (num3>num2 && num3>num1){
-    console.log('Numero 3 mas 1: '+ num3++);
-  } else if (num1===0 ||num2 ===0 || num3===0){
-    console.log('Error');
-  } else {
-    console.log(false);
+    num3++;
+    return num3;
+  } else if (num1===0 || num2 ===0 || num3===0){
+    return "Error";
+  } else if {
+    return false;
   }
 }
 
@@ -153,13 +155,32 @@ function esPrimo(numero) {
   // De lo contrario devuelve "falso"
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
-  // Nota: Los números 0 y 1 NO son considerados números primos
+  
+  var divisiones=0;
+
+  for (var i=0; i <= numero; i++) {
+        if (numero%i===0){
+          divisiones++;
+        }
+  }
+  if (divisiones===2){
+    return true;
+  } else if(){
+    return false;
+  }
+
 }
+
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
+  if (true){
+    return "Soy verdadero";
+  } else {
+    return "Soy falso";
+  }
 
 }
 
