@@ -165,7 +165,7 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  var p==='Es Positivo', n==='Es Negativo';
+  var p='Es Positivo', n='Es Negativo';
 
   if(numero > 0){
   return p
@@ -190,7 +190,7 @@ function combinarNombres(nombre, apellido) {
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
-  // Tu código:
+  // Tu código:console.log('"Hola ' + nombre + '"');
   console.log('"Hola ' + nombre + '"');
 }
 
