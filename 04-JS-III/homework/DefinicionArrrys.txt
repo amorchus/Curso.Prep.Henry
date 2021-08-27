@@ -1,0 +1,5 @@
+ En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+	* Arrays
+
+	Arrays entiendo que es un tipo de dato que permite alamacenar gran cantidad de datos deñ mismo o de  distinto tipo. Lo hace como si fuese un tren donde cada bagon contiene un dato y se puede acceder a cada uno con lo que se conoce como subindice que seria la posision de cada vagon. 
