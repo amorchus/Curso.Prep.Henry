@@ -1,0 +1,73 @@
+*{
+	font-family: Courier Prime;
+	color:  #111;
+}
+
+.nav{
+	background-color: #FF3311;
+	padding: 0;
+	margin: 0;
+	height: 100px;
+}
+
+h1{
+	margin: 0;
+	padding: 32px;
+	display: flex;
+	justify-content: center;
+	font-size: 40px;
+	text-decoration: overline underline;
+}
+
+h2{
+	padding: 0;
+	margin: 0;
+	color: whitesmoke;
+}
+
+.subtitulo{
+	font-style: italic;
+	text-shadow: 1px 1px 13px;
+}
+
+h3{
+	margin: 0;
+	color: whitesmoke;
+}
+body{
+	background-color: lightblue;
+	height: 100%;
+}
+.datosP{
+	background-color: #0f267a;
+	width: 480px;
+	padding: 10px;
+	margin: 10px 0px;
+	text-align: left;
+
+
+}
+.datosP:hover{
+	background-color: #0f26AA
+}
+div ul {
+	padding-left: 10px;
+	list-style-type: circle;
+	margin: 10px 10px;
+	line-height: 1.5;
+}
+.datos{
+	color: whitesmoke;
+}
+.datosEducacion{
+	display: inline-block;
+	width: 500px;
+	height: 200px;
+	background-color:#46b50b  ;
+}
+.datosExp{
+	display:  inline-block;
+	width: 500px;
+	height: 200px;
+	background-color:#900C3F;
+}
